@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy Tính Đơn Giản</title>
+    <style>
+        table {
+            border: 3px solid black;
+            text-align: center;
+        }
+
+        button {
+            width: 40px;
+            height: 40px;
+            color: blue;
+        }
+
+
+        input {
+            width: 100%;
+            height: 27px;
+        }
+    </style>
+</head>
+<body onload="docReady()">
+
+<table cellpadding="5px" cellspacing="10px">
+    <tr>
+        <td colspan="4" style="border: 1px solid black">
+            <div style="width: 220px; height: 20px; text-align: right">
+                <span id="calculation">0</span>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <button onclick="numberOne()" value="1" id="1">1</button>
+        </td>
+        <td>
+            <button onclick="numberTwo()" value="2" id="2">2</button>
+        </td>
+        <td>
+            <button onclick="numberThree()">3</button>
+        </td>
+        <td>
+            <button onclick="numberAddition()">+</button>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <button onclick="numberFour()">4</button>
+        </td>
+        <td>
+            <button onclick="numberFive()">5</button>
+        </td>
+        <td>
+            <button onclick="numberSix()">6</button>
+        </td>
+        <td>
+            <button onclick="numberSubtraction()">-</button>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <button onclick="numberSeven()">7</button>
+        </td>
+        <td>
+            <button onclick="numberEight()">8</button>
+        </td>
+        <td>
+            <button onclick="numberNine()">9</button>
+        </td>
+        <td>
+            <button onclick="numberMultiplication()">x</button>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <button onclick="numberReset()">C</button>
+        </td>
+        <td>
+            <button onclick="numberZero()">0</button>
+        </td>
+        <td>
+            <button onclick="numberEqual()">=</button>
+        </td>
+        <td>
+            <button onclick="numberDivision()">/</button>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <button onclick="numberOpen()">(</button>
+        </td>
+        <td>
+            <button onclick="numberClose()">)</button>
+        </td>
+        <td>
+            <button onclick="numberDot()">.</button>
+        </td>
+        <td>
+            <button onclick="numberAnswer()">Ans</button>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <button onclick="removeNumber()">Xóa</button>
+        </td>
+    </tr>
+</table>
+<script src="calculation.js"></script>
+</body>
+</html>
